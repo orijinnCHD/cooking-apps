@@ -1,0 +1,19 @@
+form{
+    padding-bottom:30px;
+
+    input{
+        border:none;
+
+        background:white;
+        color:$color-grey-1;
+
+        width:300px;
+        height:40px;
+
+        border:2px solid $color-black-1;
+        border-radius: 10px;
+
+        padding-left: 10px;
+
+    }
+}

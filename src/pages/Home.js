@@ -5,7 +5,7 @@ import SearchBar from '../components/SearchBar';
 const Home = () => {
     return (
         <div>
-            <h1>React Cooking</h1>
+            <h1>React Cook</h1>
             <SearchBar/>
             <Recipes/>
         </div>

@@ -4,10 +4,8 @@ const Card = () => {
     return (
         <li className='card'>
             <h2>Title</h2>
-            <h3>origin</h3>
-            <div className="img">
-                img
-            </div>
+            <h4>origin</h4>
+            <img src="" alt="" />
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                 Quaerat cum maxime accusantium blanditiis dolorum asperiores velit. 
                 Repudiandae, iure id perferendis qui eligendi illo reprehenderit laboriosam 

@@ -3,7 +3,10 @@ import Card from './Card';
 
 const Recipes = () => {
     return (
-        <ul className='Recipes'>
+        <ul className='recipes'>
+            <Card/>
+            <Card/>
+            <Card/>
             <Card/>
         </ul>
     );
