@@ -2,7 +2,10 @@
 
     list-style: none;
     display:flex;
+    justify-content: center;
+
     flex-direction: row;
+    flex-wrap: wrap;
     padding:10px;
     gap:10px;
     
