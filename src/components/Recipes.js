@@ -1,25 +1,26 @@
 import axios from 'axios';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from './Card';
 
 const Recipes = () => {
 
-    useEffect(()=>{
+    const [mealData, setMealData] = useState([]);
 
-        axios.get('https://restcountries.com/v3.1/all').then((res)=>{console.log(res.data)});
-    
-    },[])
+    const getMeal = () =>{
+        axios.get('https://www.themealdb.com/api/json/v1/1/search.php?s=').then((res)=>{setMealData(res.data.meals)});
+    }
+
+    useEffect(()=>{getMeal()},[]);
 
     return (
         <ul className='recipes'>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
+            {
+               mealData
+               .map( (meal,index) =>
+               (
+                    <Card key={index} meal={meal} />
+               ))
+            }
         </ul>
     );
 };
