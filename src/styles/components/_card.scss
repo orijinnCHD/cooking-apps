@@ -24,5 +24,13 @@
     
     p{
         padding:15px 10px 20px;
+
+        // pour avoir le méme hauteur de paragraphe pour chaque card important !!
+
+        display:-webkit-box;
+        -webkit-box-orient:vertical;
+        -webkit-line-clamp:8;
+        overflow:hidden;
+
     }
 }
