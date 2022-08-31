@@ -2,13 +2,13 @@ import React from 'react';
 
 const Card = ({meal}) => {
 
-    console.log(meal);
+    
 
     return (
         <li className='card'>
             <h2>{meal.strMeal}</h2>
             <h4>origin : {meal.strArea}</h4>
-            <img src={meal.strMealThumb} alt="" />
+            <img src={meal.strMealThumb} alt={meal.strMeal} />
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                 Quaerat cum maxime accusantium blanditiis dolorum asperiores velit. 
                 Repudiandae, iure id perferendis qui eligendi illo reprehenderit laboriosam 
