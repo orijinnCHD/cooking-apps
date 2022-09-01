@@ -13,9 +13,6 @@ const Recipes = ({inputValue}) => {
         axios.get('https://www.themealdb.com/api/json/v1/1/search.php?s='+inputValue).then((res)=>{setMealData(res.data.meals)});
     }
 
-    console.log(inputValue);
-
-
     //[] : c'est le callback de useeffect si il y a pas ça il fait une boucle infinie
     // pour qu'il s'actualise à chaque fois qu'on tape une nouvelle valeur dans input
     // on doit rajouter element qui change dans les crochet : inputvalue
